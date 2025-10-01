@@ -1,0 +1,9 @@
+{
+  "name": "utils-formatting",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "echo 'No tests yet'"
+  }
+}

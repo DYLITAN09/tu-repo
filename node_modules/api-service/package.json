@@ -1,0 +1,11 @@
+{
+  "name": "api-service",
+  "version": "1.0.0",
+  "dependencies": {
+    "utils-formatting": "*"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js"
+  }
+}

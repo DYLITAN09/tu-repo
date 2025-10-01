@@ -1,0 +1,247 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.6.2",
+  "pathMappings": {
+    "ui-components": [
+      "packages/ui-components/src"
+    ],
+    "utils-formatting": [
+      "packages/utils-formatting/src"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "web-app": [
+        {
+          "file": "apps/web-app/.turbo/turbo-build.log",
+          "hash": "1601823404738908579"
+        },
+        {
+          "file": "apps/web-app/dist/apps/web-app/src/index.js",
+          "hash": "15694379751830670995"
+        },
+        {
+          "file": "apps/web-app/dist/packages/ui-components/src/index.js",
+          "hash": "8896274134232224072"
+        },
+        {
+          "file": "apps/web-app/dist/packages/utils-formatting/src/index.js",
+          "hash": "936139474708191601"
+        },
+        {
+          "file": "apps/web-app/package.json",
+          "hash": "3615710376385454410",
+          "deps": [
+            "ui-components",
+            "utils-formatting"
+          ]
+        },
+        {
+          "file": "apps/web-app/src/index.ts",
+          "hash": "14448086794790060009"
+        },
+        {
+          "file": "apps/web-app/tsconfig.json",
+          "hash": "10549619386892649163"
+        }
+      ],
+      "api-service": [
+        {
+          "file": "apps/api-service/.turbo/turbo-build.log",
+          "hash": "1190056471465774908"
+        },
+        {
+          "file": "apps/api-service/dist/apps/api-service/src/index.js",
+          "hash": "16573554958542123372"
+        },
+        {
+          "file": "apps/api-service/dist/packages/utils-formatting/src/index.js",
+          "hash": "936139474708191601"
+        },
+        {
+          "file": "apps/api-service/package.json",
+          "hash": "538344436753945027",
+          "deps": [
+            "utils-formatting"
+          ]
+        },
+        {
+          "file": "apps/api-service/src/index.ts",
+          "hash": "8879526375791247034"
+        },
+        {
+          "file": "apps/api-service/tsconfig.json",
+          "hash": "10549619386892649163"
+        }
+      ],
+      "utils-formatting": [
+        {
+          "file": "packages/utils-formatting/.turbo/turbo-build.log",
+          "hash": "1165239773622098313"
+        },
+        {
+          "file": "packages/utils-formatting/.turbo/turbo-test.log",
+          "hash": "18374593473820663698"
+        },
+        {
+          "file": "packages/utils-formatting/dist/index.js",
+          "hash": "936139474708191601"
+        },
+        {
+          "file": "packages/utils-formatting/package.json",
+          "hash": "595455253249593985"
+        },
+        {
+          "file": "packages/utils-formatting/src/index.ts",
+          "hash": "7030857059544110142"
+        },
+        {
+          "file": "packages/utils-formatting/tsconfig.json",
+          "hash": "10549619386892649163"
+        }
+      ],
+      "ui-components": [
+        {
+          "file": "packages/ui-components/.turbo/turbo-build.log",
+          "hash": "9145596725945971030"
+        },
+        {
+          "file": "packages/ui-components/.turbo/turbo-test.log",
+          "hash": "12919383915294467745"
+        },
+        {
+          "file": "packages/ui-components/dist/index.js",
+          "hash": "8896274134232224072"
+        },
+        {
+          "file": "packages/ui-components/package.json",
+          "hash": "16570987797032765062"
+        },
+        {
+          "file": "packages/ui-components/src/index.ts",
+          "hash": "13658760931097692931"
+        },
+        {
+          "file": "packages/ui-components/tsconfig.json",
+          "hash": "10549619386892649163"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".turbo/cache/093533ba99b82a59-meta.json",
+        "hash": "3799468685864189131"
+      },
+      {
+        "file": ".turbo/cache/093533ba99b82a59.tar.zst",
+        "hash": "17907916141248264462"
+      },
+      {
+        "file": ".turbo/cache/22dcc9f6ef3962ac-meta.json",
+        "hash": "11366108842078369235"
+      },
+      {
+        "file": ".turbo/cache/22dcc9f6ef3962ac.tar.zst",
+        "hash": "3067759818845609397"
+      },
+      {
+        "file": ".turbo/cache/3d49a4690fbd59f9-meta.json",
+        "hash": "13801476064498976848"
+      },
+      {
+        "file": ".turbo/cache/3d49a4690fbd59f9.tar.zst",
+        "hash": "9577959977572341253"
+      },
+      {
+        "file": ".turbo/cache/6414681043f6f8d9-meta.json",
+        "hash": "7179447504142890952"
+      },
+      {
+        "file": ".turbo/cache/6414681043f6f8d9.tar.zst",
+        "hash": "7012188100414449644"
+      },
+      {
+        "file": ".turbo/cache/6953438b371595da-meta.json",
+        "hash": "11816953728977743156"
+      },
+      {
+        "file": ".turbo/cache/6953438b371595da.tar.zst",
+        "hash": "10713511831364960599"
+      },
+      {
+        "file": ".turbo/cache/7848eeb033739bb9-meta.json",
+        "hash": "2442185942463803573"
+      },
+      {
+        "file": ".turbo/cache/7848eeb033739bb9.tar.zst",
+        "hash": "3067759818845609397"
+      },
+      {
+        "file": ".turbo/cache/841a594e7c5f92c2-meta.json",
+        "hash": "13279925877975363507"
+      },
+      {
+        "file": ".turbo/cache/841a594e7c5f92c2.tar.zst",
+        "hash": "10713511831364960599"
+      },
+      {
+        "file": ".turbo/cache/9ef063bf398732f3-meta.json",
+        "hash": "18394535331954810871"
+      },
+      {
+        "file": ".turbo/cache/9ef063bf398732f3.tar.zst",
+        "hash": "7009410722911456933"
+      },
+      {
+        "file": ".turbo/cache/d9f7c20fdec32cd8-meta.json",
+        "hash": "8388230998884817782"
+      },
+      {
+        "file": ".turbo/cache/d9f7c20fdec32cd8.tar.zst",
+        "hash": "7012188100414449644"
+      },
+      {
+        "file": ".turbo/cache/e0282715ab2336d7-meta.json",
+        "hash": "1639721636939382686"
+      },
+      {
+        "file": ".turbo/cache/e0282715ab2336d7.tar.zst",
+        "hash": "7009410722911456933"
+      },
+      {
+        "file": ".turbo/cookies/2.cookie",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".turbo/cookies/3.cookie",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".turbo/daemon/dfd2f2cceb725bfe-turbo.log.2025-10-01",
+        "hash": "8440795918134475598"
+      },
+      {
+        "file": "Evidencia_grafo_dependencias_NX.png",
+        "hash": "10059886015319992488"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "1372305303044796777"
+      },
+      {
+        "file": "package.json",
+        "hash": "16134044340322066235"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "4973929080937240955"
+      },
+      {
+        "file": "turbo.json",
+        "hash": "13618528324126635662"
+      }
+    ]
+  },
+  "externalNodesHash": "13712910809564664487"
+}
