@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      # 🔹 Construye solo lo afectado por el cambio
+      - name: Build affected
+        run: npx nx affected:build --base=origin/main --head=HEAD
+
+      # 🔹 Corre tests solo en lo afectado
+      - name: Test affected
+        run: npx nx affected:test --base=origin/main --head=HEAD
+
+      # 🔹 Corre lint solo en lo afectado
+      - name: Lint affected
+        run: npx nx affected:lint --base=origin/main --head=HEAD
