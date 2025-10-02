@@ -1,0 +1,48 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "npmScope": "org-monorepo",
+  "implicitDependencies": {},
+  "targetDefaults": {},
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx-cloud",
+      "options": {
+        "accessToken": "AQUI_VA_TU_TOKEN_DE_NX_CLOUD",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
+    }
+  },
+  "projects": {
+    "ui-components": {
+      "tags": ["scope:ui", "type:lib"]
+    },
+    "utils-formatting": {
+      "tags": ["scope:utils", "type:lib"]
+    },
+    "web-app": {
+      "tags": ["scope:web", "type:app"]
+    },
+    "api-service": {
+      "tags": ["scope:api", "type:app"]
+    }
+  },
+  "constraints": [
+    {
+      "sourceTag": "scope:ui",
+      "onlyDependOnLibsWithTags": ["scope:utils"]
+    },
+    {
+      "sourceTag": "scope:utils",
+      "onlyDependOnLibsWithTags": []
+    },
+    {
+      "sourceTag": "scope:web",
+      "onlyDependOnLibsWithTags": ["scope:ui", "scope:utils"]
+    },
+    {
+      "sourceTag": "scope:api",
+      "onlyDependOnLibsWithTags": ["scope:utils"]
+    }
+  ]
+}
