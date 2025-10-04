@@ -1,4 +1,4 @@
-name: CI
+name: CI with Nx Agents
 
 on:
   push:
@@ -23,6 +23,10 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      #  Arranca Nx Cloud en modo distribuido
+      - name: Start distributed run
+        run: npx nx-cloud start-ci-run --distribute-on="2 linux-medium-js"
 
       - name: Build affected
         run: npx nx affected:build --base=origin/main --head=HEAD --parallel=3
@@ -68,3 +72,26 @@ jobs:
 
       - name: Lint affected
         run: npx nx affected:lint --base=origin/main --head=HEAD --parallel=3
+
+  #  Agents controlados por Nx Cloud
+  nx-cloud-agent:
+    runs-on: ubuntu-latest
+    name: Nx Agent
+    timeout-minutes: 15
+    env:
+      NX_CLOUD_ACCESS_TOKEN: ZjNjNmRmMDktZWQwNy00YzYxLWIyMTQtOGMyNGU2ZWVjZWE4fHJlYWQtd3JpdGU=
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Start Nx Agent
+        run: npx nx-cloud start-agent
