@@ -7,7 +7,7 @@
     "default": {
       "runner": "nx-cloud",
       "options": {
-        "accessToken": "AQUI_VA_TU_TOKEN_DE_NX_CLOUD",
+        "accessToken": "ZjNjNmRmMDktZWQwNy00YzYxLWIyMTQtOGMyNGU2ZWVjZWE4fHJlYWQtd3JpdGU=",
         "canTrackAnalytics": false,
         "showUsageWarnings": true
       }
